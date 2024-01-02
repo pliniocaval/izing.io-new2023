@@ -1,4 +1,4 @@
-import axios from 'axios'
+/*import axios from 'axios'
 
 const service = axios.create({
   baseURL: 'https://auth.izing.app/?rest_route=/izingpro/v1/auth',
@@ -13,4 +13,4 @@ export function validaapi () {
       password: process.env.SENHA_API
     }
   })
-}
+}*/
