@@ -1,0 +1,74 @@
+#NODE_ENV=prod
+
+# ambiente
+NODE_ENV=dev
+
+# URL do backend para construção dos hooks
+BACKEND_URL=https://api.izing.app
+
+# URL do front para liberação do cors
+FRONTEND_URL=https://sistema.izing.app
+
+# Porta utilizada para proxy com o serviço do backend
+PROXY_PORT=443
+
+# Porta que o serviço do backend deverá ouvir
+PORT=3001
+
+
+# conexão com o banco de dados
+DB_DIALECT=postgres
+DB_PORT=5433
+POSTGRES_HOST=localhost
+POSTGRES_USER=izing
+POSTGRES_PASSWORD=password
+POSTGRES_DB=izing
+
+
+# Chaves para criptografia do token jwt
+JWT_SECRET=DPHmNRZWZ4isLF9vXkMv1QabvpcA80Rc
+JWT_REFRESH_SECRET=EMPehEbrAdi7s8fGSeYzqGQbV5wrjH4i
+
+# Dados de conexão com o REDIS
+#iO_REDIS_SERVER=localhost
+#IO_REDIS_PASSWORD=password
+#O_REDIS_PORT='6379'
+#O_REDIS_DB_SESSION='2'
+IO_REDIS_SERVER=localhost
+IO_REDIS_PASSWORD='password'
+IO_REDIS_PORT='6380'
+IO_REDIS_DB_SESSION='2'
+
+#CHROME_BIN=/usr/bin/google-chrome
+CHROME_BIN=/usr/bin/google-chrome-stable
+#CHROME_BIN=null
+
+# tempo para randomização da mensagem de horário de funcionamento
+MIN_SLEEP_BUSINESS_HOURS=10000
+MAX_SLEEP_BUSINESS_HOURS=20000
+
+# tempo para randomização das mensagens do bot
+MIN_SLEEP_AUTO_REPLY=4000
+MAX_SLEEP_AUTO_REPLY=6000
+
+# tempo para randomização das mensagens gerais
+MIN_SLEEP_INTERVAL=2000
+MAX_SLEEP_INTERVAL=5000
+
+
+# dados do RabbitMQ / Para não utilizar, basta comentar a var AMQP_URL
+#ABBITMQ_DEFAULT_USER=admin
+#ABBITMQ_DEFAULT_PASS=123456
+AMQP_URL='amqp://guest:guest@127.0.0.1:5673?connection_attempts=5&retry_delay=5'
+# AMQP_URL='amqp://admin:123456@host.docker.internal:5672?connection_attempts=5&retry_delay=5'
+
+# api oficial (integração em desenvolvimento)
+#API_URL_360=https://waba-sandbox.360dialog.io
+
+# usado para mosrar opções não disponíveis normalmente.
+ADMIN_DOMAIN=solicencas.com
+
+# Dados para utilização do canal do facebook
+FACEBOOK_APP_ID='2315073355326457'
+FACEBOOK_APP_SECRET_KEY='721f7ae60cb0e503135ea9eb5e8594e3'
+
